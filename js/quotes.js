@@ -206,6 +206,10 @@ const quotes = [
     quote: "Work hard in silence. Let success make the noise.",
     author: "",
   },
+  {
+    quote: "Showing off is the fool's idea of glory.",
+    author: "",
+  },
 ];
 
 const quote = document.querySelector("#quote span:first-child");

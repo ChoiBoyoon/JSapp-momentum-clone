@@ -25,7 +25,7 @@ img {
 
 #clock {
   position: fixed;
-  top: 23.2vh;
+  top: 22.2vh;
   font-size: 16.7vh;
   letter-spacing: -0.2vw;
   font-weight: 455;
@@ -33,31 +33,65 @@ img {
 
 #greeting {
   position: fixed;
-  top: 51.3vh;
+  top: 50.3vh;
   font-size: 54px;
   font-size: 5.4vh;
-  font-weight: 455;
+  font-weight: 452;
   letter-spacing: -0.01vw;
 }
 
 #todo-form {
   position: fixed;
   padding: 1vh;
-  top: 70vh;
+  top: 67vh;
   width: 30vw;
-  border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
 }
 
 #todo-form input {
+  color: white;
+  font-size: 3vh;
+  padding: 1.5vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0);
   border: none;
+  border-bottom: 0.2vh solid white;
 }
 
 #todo-form input::placeholder {
-  font-size: 2vh;
+  font-size: 3vh;
   color: white;
   text-shadow: 0 1px 5px rgb(0 0 0 / 20%);
+  text-align: center;
+}
+
+#todo-form input:focus {
+  outline: none;
+  border-bottom: 0.2vh solid white;
+}
+
+#todo-form input:focus::placeholder {
+  color: transparent;
+}
+
+#todo-list {
+  position: fixed;
+  top: 75vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+#todo-list li {
+  font-size: 2.2vh;
+  padding: 0.2vh;
+}
+
+#todo-list li button {
+  background-color: transparent;
+  border: none;
 }
 
 #quote {
