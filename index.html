@@ -12,17 +12,18 @@
     <h1 id="greeting" class="hidden"></h1>
 
     <form id="login-form" class="hidden">
-      <input
-        required
-        type="text"
-        maxlength="15"
-        placeholder="What is your name?"
-      />
-      <button>Log In</button>
+      <h2>Hello, what's your name?</h2>
+      <input required type="text" maxlength="15" spellcheck="false" />
+      <button>Continue <i class="fas fa-chevron-right"></i></button>
     </form>
 
     <form id="todo-form">
-      <input type="text" placeholder="What is your focus for today?" />
+      <input
+        type="text"
+        required
+        placeholder="What is your focus for today?"
+        spellcheck="false"
+      />
     </form>
     <ul id="todo-list"></ul>
     <div id="quote">

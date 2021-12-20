@@ -1,5 +1,5 @@
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 body {
@@ -21,6 +21,54 @@ img {
   z-index: -1;
   object-fit: cover;
   top: 0;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 0.2vh solid white;
+  text-align: center;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#login-form h2 {
+  position: fixed;
+  top: 37.3vh;
+  font-size: 5.4vh;
+  font-weight: 440;
+}
+
+#login-form input {
+  position: fixed;
+  top: 50.4vh;
+  width: 30%;
+  color: white;
+  font-size: 5.5vh;
+  padding: 0.7vh;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 0.2vh solid white;
+}
+
+#login-form button {
+  position: absolute;
+  top: 61vh;
+  width: 6vw;
+  color: white;
+  font-size: 1.5vh;
+  background-color: transparent;
+  padding: 0.8vh;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+#login-form button i {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 #clock {
@@ -62,11 +110,6 @@ img {
   color: white;
   text-shadow: 0 1px 5px rgb(0 0 0 / 20%);
   text-align: center;
-}
-
-#todo-form input:focus {
-  outline: none;
-  border-bottom: 0.2vh solid white;
 }
 
 #todo-form input:focus::placeholder {
@@ -125,8 +168,6 @@ img {
   font-size: 1vh;
 }
 
-#weather i {
-  position: fixed;
-  top: 5vh;
-  right: 1vw;
+.hidden {
+  display: none;
 }
