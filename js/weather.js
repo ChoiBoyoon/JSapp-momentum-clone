@@ -10,13 +10,14 @@ function onGeoOK(position) {
     .then((data) => {
       const temp = document.querySelector("#weather span:first-child");
       const city = document.querySelector("#weather span:nth-child(2)");
+      const weather_icon = document.querySelector("#weather i");
       temp.innerText = data.main.temp + "°";
       city.innerText = data.name;
 
-      //if (data.weather[0].main === "Clouds") {
-      //weather.classList.add("fas");
-      //weather.classList.add("fa-cloud");
-      //}
+      if (data.weather[0].main === "Clouds") {
+        weather_icon.classList.add("fas");
+        weather_icon.classList.add("fa-cloud");
+      }
     });
 }
 

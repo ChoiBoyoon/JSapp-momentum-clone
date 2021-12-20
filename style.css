@@ -168,6 +168,13 @@ input:focus {
   font-size: 1vh;
 }
 
+#weather i {
+  position: fixed;
+  top: 2.8vh;
+  right: 4.6vw;
+  font-size: 2.5vh;
+}
+
 .hidden {
   display: none;
 }

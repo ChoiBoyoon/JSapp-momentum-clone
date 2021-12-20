@@ -22,12 +22,13 @@ function paintGreetings() {
   const username = localStorage.getItem(USERNAME_KEY);
 
   const date = new Date();
-  const hours = String(date.getHours()).padStart(2, "0");
+  let hours = String(date.getHours()).padStart(2, "0");
+  hours = parseInt(hours);
   if (hours >= 4 && hours < 12) {
     greeting.innerText = "Good morning, " + username + ".";
-  } else if (hours >= 12 && hours < 18) {
+  } else if (hours >= 12 && hours < 17) {
     greeting.innerText = "Good afternoon, " + username + ".";
-  } else if (hours >= 18 && hours < 4) {
+  } else if (hours >= 17 || hours < 4) {
     greeting.innerText = "Good evening, " + username + ".";
   } else {
     greeting.innerText = "Hello, " + username + ".";
