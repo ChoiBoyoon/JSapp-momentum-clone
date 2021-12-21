@@ -42,7 +42,6 @@ const images = [
   "40.jpeg",
   "41.jpeg",
   "42.jpeg",
-  "43.jpeg",
 ];
 
 const chosenImage = images[Math.floor(Math.random() * images.length)];

@@ -17,6 +17,9 @@ function onGeoOK(position) {
       if (data.weather[0].main === "Clouds") {
         weather_icon.classList.add("fas");
         weather_icon.classList.add("fa-cloud");
+      } else if (data.weather[0].main == "Clear") {
+        weather_icon.classList.add("fas");
+        weather_icon.classList.add("fa-sun");
       }
     });
 }
