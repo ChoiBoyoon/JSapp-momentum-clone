@@ -7,5 +7,6 @@ function getClock() {
   //const seconds = String(date.getSeconds()).padStart(2, "0");
   clock.innerText = `${hours}:${minutes}`;
 }
+
 getClock();
-setInterval(getClock, 1000);
+setInterval(getClock, 10000); //시간 업데이트(1초->10초로 변경)

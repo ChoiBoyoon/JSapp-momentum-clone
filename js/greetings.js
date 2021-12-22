@@ -54,4 +54,5 @@ if (savedUsername === null) {
 } else {
   loginForm.classList.add(CLASS_HIDDEN);
   paintGreetings();
+  setInterval(paintGreetings, 6000000); //10분에 한 번 시간 체크, greeting message업데이트(너무 자주 할 필요 없음)
 }
