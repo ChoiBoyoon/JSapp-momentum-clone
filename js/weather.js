@@ -14,12 +14,17 @@ function onGeoOK(position) {
       temp.innerText = data.main.temp + "°";
       city.innerText = data.name;
 
+      console.log(data.weather[0].main);
+
       if (data.weather[0].main === "Clouds") {
         weather_icon.classList.add("fas");
         weather_icon.classList.add("fa-cloud");
       } else if (data.weather[0].main == "Clear") {
         weather_icon.classList.add("fas");
         weather_icon.classList.add("fa-sun");
+      } else if (data.weather[0].main == "Mist") {
+        weather_icon.classList.add("fas");
+        weather_icon.classList.add("fa-stream");
       }
     });
 }
