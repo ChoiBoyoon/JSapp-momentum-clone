@@ -26,23 +26,6 @@ const images = [
   "24.jpeg",
   "25.jpeg",
   "26.jpeg",
-  "27.jpeg",
-  "28.jpeg",
-  "29.jpeg",
-  "30.jpeg",
-  "31.jpeg",
-  "32.jpeg",
-  "33.jpeg",
-  "34.jpeg",
-  "35.jpeg",
-  "36.jpeg",
-  "37.jpeg",
-  "38.jpeg",
-  "39.jpeg",
-  "40.jpeg",
-  "41.jpeg",
-  "42.jpeg",
-  "43.jpeg",
 ];
 
 const chosenImage = images[Math.floor(Math.random() * images.length)];
