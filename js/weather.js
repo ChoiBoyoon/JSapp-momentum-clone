@@ -25,6 +25,9 @@ function onGeoOK(position) {
       } else if (data.weather[0].main == "Mist") {
         weather_icon.classList.add("fas");
         weather_icon.classList.add("fa-stream");
+      } else if (data.weather[0].main == "Rain") {
+        weather_icon.classList.add("fas");
+        weather_icon.classList.add("fa-cloud-sun-rain");
       }
     });
 }

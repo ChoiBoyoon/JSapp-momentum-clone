@@ -5,6 +5,11 @@ const loginInput = document.querySelector("#login-form input");
 const CLASS_HIDDEN = "hidden";
 const USERNAME_KEY = "username";
 
+clock_1 = document.querySelector("#clock");
+todo_form = document.querySelector("#todo-form");
+quote_greetings = document.querySelector("#quote");
+weather = document.querySelector("#weather");
+
 function onLoginSubmit(event) {
   //submit이 되면,
   event.preventDefault(); //새로고침 방지
@@ -15,7 +20,7 @@ function onLoginSubmit(event) {
   loginForm.classList.add(CLASS_HIDDEN);
   clock_1.classList.remove(CLASS_HIDDEN);
   todo_form.classList.remove(CLASS_HIDDEN);
-  quote.classList.remove(CLASS_HIDDEN);
+  quote_greetings.classList.remove(CLASS_HIDDEN);
   weather.classList.remove(CLASS_HIDDEN);
 }
 
@@ -23,8 +28,7 @@ function paintGreetings() {
   const username = localStorage.getItem(USERNAME_KEY);
 
   const date = new Date();
-  let hours = String(date.getHours()).padStart(2, "0");
-  hours = parseInt(hours);
+  const hours = date.getHours();
   if (hours >= 4 && hours < 12) {
     greeting.innerText = "Good morning, " + username + ".";
   } else if (hours >= 12 && hours < 17) {
@@ -42,13 +46,11 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 if (savedUsername === null) {
   //만약 savedUsername이 null이면
   let toDos = []; //혹시 모를 에러 방지를 위해 초기화
-  clock_1 = document.querySelector("#clock"); //시간, todo form, quote, 날씨 다 숨기고
+
+  //시간, todo form, quote, 날씨 다 숨기고
   clock_1.classList.add(CLASS_HIDDEN);
-  todo_form = document.querySelector("#todo-form");
   todo_form.classList.add(CLASS_HIDDEN);
-  quote = document.querySelector("#quote");
   quote.classList.add(CLASS_HIDDEN);
-  weather = document.querySelector("#weather");
   weather.classList.add(CLASS_HIDDEN);
 
   loginForm.classList.remove(CLASS_HIDDEN); //login form은 보여주고
