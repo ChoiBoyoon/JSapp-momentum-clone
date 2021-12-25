@@ -5,7 +5,8 @@ https://choiboyoon.github.io/JSapp-momentum-clone/
 구현된 기능:
 * <b>randomly display wallpaper.</b> (Math.random())
   * also, greeting messages vary depending on current time
-* <b>displays current hour, minute</b> (used Date object & setInterval())
+* <b>display current weather</b> (openweathermap api, navigator.geolocation)
+* <b>display current hour, minute</b> (used Date object & setInterval())
 * randomly show quotes on the bottom of the screen.
 * <b>manage to-do list.</b> add & delete & display. The list is stored on localStorage, in object format.
   * <b>add</b>: localStorage.setItem("todos",JSON.stringify(toDos));
@@ -26,3 +27,4 @@ Functions to be added:
 * 배포 가능하도록 
 * 사용자가 시간대에 따른 background 이미지 선택 가능하게.
 * 날씨 icon 클릭 -> forecast 열람 가능
+* 왼쪽 상단 - 주간 목표 or 월간 목표 
