@@ -20,8 +20,8 @@ https://choiboyoon.github.io/JSapp-momentum-clone/
 
 
 Functions to be added:
-* 시간대에 따라 randomly displayed되는 background의 종류가 달라지도록.(ex.아침: 떠오르는 태양, 저녁: 노을, 밤: 별이 빛나는 밤)
-* 날씨 icon 추가 (맑음, 안개, 비)
+* ~~시간대에 따라 randomly displayed되는 background의 종류가 달라지도록.(ex.아침: 떠오르는 태양, 저녁: 노을, 밤: 별이 빛나는 밤)~~
+* ~~날씨 icon 추가 (맑음, 안개, 비)~~
 * 화면 비율에 따라 다른 display가 출력되도록 (ex. 스마트폰, 태블릿)
 * 시작페이지로 지정
 * 배포 가능하도록 
